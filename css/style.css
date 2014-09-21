@@ -44,3 +44,74 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+
+/* Page debug styles: background and div outlines -- REMOVE when finished */
+
+body {
+    background-color: LightGray;
+}
+div {
+    border: 1px solid Chocolate;
+}
+
+/* Page styles */
+.top-navigation {
+	background-color: #fff;
+}
+.top-navigation > .content {
+	width: 940px;
+	height: 70px;
+	margin: 0 auto;
+}
+.content {
+	padding: 0 15px;
+}
+.content > img {
+	width: 26px;
+	height: 70px;
+}
+.links {
+	float: right;
+}
+.links > li {
+	display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
