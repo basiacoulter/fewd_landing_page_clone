@@ -50,6 +50,7 @@ table {
 
 body {
     background-color: LightGray;
+    font-family: 'Roboto Light', sans-serif;
 }
 div {
     border: 1px solid Chocolate;
@@ -85,7 +86,7 @@ div {
 .top-navigation .links > li {
 	display: inline-block;
 	margin-left: 25px;
-	font-family: 'Roboto', sans-serif; 
+	font-family: 'Roboto Regular', sans-serif; 
 	font-size: 16px; 
 	color: #838994; 
 	letter-spacing: 0.03em;
@@ -101,16 +102,72 @@ div {
 	background-repeat: no-repeat;
 	background-position: bottom center;
 	background-size: cover;
+	overflow: auto;
+}
+.introduction h1, 
+.introduction h3 {
+	color: #fff;
+	text-align: center;
+	
+}
+h1 {
+	font-size: 3em;
+	margin-top: 4em;
+	margin-bottom: 0.5em;
+	font-family: 'Arvo Bold', serif;
+}
+h3 {
+	font-size: 1.4em;
+	font-family: 'Arvo Regular', serif;
+	margin-bottom: 2em;
+}
+.buttons {
+	width: 300px;
+	margin: 0 auto;
+}
+.half {
+	float: left;
+}
+button {
+	text-shadow: none;
+	border-style: none;
+	border-radius: 4px;
+	padding: 16px 26px;
+	line-height: 1.33;
+	font-size: 1em;
+
+}
+.buttons {
+	clear: both;
+}
+.learn {
+	margin-right: 20px;
+}
+.watch {
+	color: #fff;
+	text-align: center;
 }
 
-
-
-
-
-
-
-
-
+@font-face {
+  font-family: 'Roboto Light';
+  src: url(../fonts/Roboto/Roboto-Light.ttf); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Roboto Regular';
+  src: url(../fonts/Roboto/Roboto-Regular.ttf); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Arvo Bold';
+  src: url(../fonts/Arvo/Arvo-Bold.ttf); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Arvo Regular';
+  src: url(../fonts/Arvo/Arvo-Regular.ttf); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+  font-weight: 700;
+}
 
 
 
