@@ -95,7 +95,13 @@ div {
 	color: #333333;
 	cursor: pointer;
 }
-
+.introduction {
+	height: 590px;
+	background-image: url(../img/first-background.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-size: cover;
+}
 
 
 
