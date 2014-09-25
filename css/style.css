@@ -60,6 +60,8 @@ div {
 /*Navigation bar*/
 .top-navigation {
 	background-color: #fff;
+	width: 100%;
+	position: fixed;
 }
 .top-navigation > .content {
 	width: 940px;
