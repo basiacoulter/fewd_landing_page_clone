@@ -120,11 +120,11 @@ div {
 h1 {
 	font-size: 5.0625em;
 	margin-top: 1.5em;
-	font-family: 'Arvo Bold', serif;
+	font-family: 'RobotoSlab Bold', serif;
 }
 h3 {
 	font-size: 2.25em;
-	font-family: 'Arvo Regular', serif;
+	font-family: 'RobotoSlab Light', serif;
 	margin-bottom: 2em;
 }
 .cases h2 {
@@ -161,8 +161,9 @@ button {
 	border: 1px solid #fff;
 }
 .arrow {
-	width: 70px;
-	margin: 100px auto 0 auto;
+	width: 3em;
+	margin: 12em auto 0 auto;
+	animation: bounce 2s ease-in infinite;
 }
 .arrow {
 	animation-name: bounce;
@@ -177,8 +178,8 @@ button {
 	margin-top: 1.4em;    
 }
 .devices img {
-	width: 60%;
-	margin-left: 20%;
+	width: 40%;
+	margin-left: 30%;
 }
 @font-face {
   font-family: 'Roboto Light';
@@ -191,28 +192,36 @@ button {
   font-weight: 400;
 }
 @font-face {
-  font-family: 'Arvo Bold';
-  src: url(../fonts/Arvo/Arvo-Bold.ttf); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+  font-family: 'RobotoSlab Bold';
+  src: url(../fonts/Roboto_Slab/RobotoSlab-Bold.ttf); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
   font-weight: 700;
 }
 @font-face {
-  font-family: 'Arvo Regular';
-  src: url(../fonts/Arvo/Arvo-Regular.ttf); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+  font-family: 'RobotoSlab Light';
+  src: url(../fonts/Roboto_Slab/RobotoSlab-Light.ttf); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
   font-weight: 700;
 }
-@keyframe 'bounce' {
-	0% { top: 0; }
-   100% { top: 50px; }
+
+@keyframes bounce {
+	0% { 
+    margin-top: 12em; 
+  }
+  20% {
+    margin-top: 12.1em;
+  }
+  40% {
+    margin-top: 11.9em;
+  }
+  60% {
+    margin-top: 12.2em;
+  }
+  80% {
+    margin-top: 11.8em;
+  }
+ 100% { 
+   margin-top: 12em; 
+  }
 }
-}
-
-
-
-
-
-
-
-
 
 
 
