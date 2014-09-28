@@ -49,7 +49,7 @@ table {
 /* Page debug styles: background and div outlines -- REMOVE when finished */
 
 body {
-    background-color: LightGray;
+    background-color: #eee;
     font-family: 'Roboto Light', sans-serif;
     font-size: 100%;
     width: 100%;
@@ -64,12 +64,13 @@ div {
 	position: fixed;
 }
 .top-navigation > .content {
-	width: 940px;
 	height: 70px;
-	margin: 0 auto;
+	
 }
 .top-navigation .content {
 	padding: 0 15px;
+	width: 940px;
+	margin: 0 auto;
 }
 .top-navigation .content > img {
 	width: 26px;
@@ -117,12 +118,12 @@ div {
 	text-align: center;
 	
 }
-h1 {
+.introduction h1 {
 	font-size: 5.0625em;
-	margin-top: 1.5em;
+	margin-top: 2em;
 	font-family: 'RobotoSlab Bold', serif;
 }
-h3 {
+.introduction h3 {
 	font-size: 2.25em;
 	font-family: 'RobotoSlab Light', serif;
 	margin-bottom: 2em;
@@ -146,7 +147,6 @@ button {
 	padding: 16px 26px;
 	line-height: 1.33;
 	font-size: 1.2em;
-
 }
 .buttons {
 	clear: both;
@@ -157,19 +157,13 @@ button {
 .watch {
 	color: #fff;
 	text-align: center;
-	padding: 3px;
+	padding: 3px 12px;
 	border: 1px solid #fff;
 }
 .arrow {
 	width: 3em;
-	margin: 12em auto 0 auto;
+	margin: 8em auto 0 auto;
 	animation: bounce 2s ease-in infinite;
-}
-.arrow {
-	animation-name: bounce;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
 }
 .cases .devices {
 	width: 33.3333333%;
@@ -180,6 +174,30 @@ button {
 .devices img {
 	width: 40%;
 	margin-left: 30%;
+}
+footer {
+	width: 100%;
+	clear: both;
+}
+
+.social ul {
+	width: 110px;
+	margin: 0 auto;
+}
+.social ul li {
+	display: inline-block;
+}
+.social i {
+	color: #182752;
+	box-sizing: border-box;
+	border: 1px solid #182752;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	padding-top: 7px;
+	-moz-border-radius: 50px; 
+	-webkit-border-radius: 50px; 
+	border-radius: 50px;
 }
 @font-face {
   font-family: 'Roboto Light';
@@ -201,25 +219,24 @@ button {
   src: url(../fonts/Roboto_Slab/RobotoSlab-Light.ttf); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
   font-weight: 700;
 }
-
 @keyframes bounce {
 	0% { 
-    margin-top: 12em; 
+    margin-top: 8em; 
   }
   20% {
-    margin-top: 12.1em;
+    margin-top: 8.5em;
   }
   40% {
-    margin-top: 11.9em;
+    margin-top: 8.3em;
   }
   60% {
-    margin-top: 12.2em;
+    margin-top: 8.5em;
   }
   80% {
-    margin-top: 11.8em;
+    margin-top: 8.3em;
   }
  100% { 
-   margin-top: 12em; 
+   margin-top: 8em; 
   }
 }
 
