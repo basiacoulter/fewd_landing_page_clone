@@ -49,137 +49,168 @@ table {
 /* Page debug styles: background and div outlines -- REMOVE when finished */
 
 body {
-    background-color: #eee;
+    /*background-color: #eee;*/
     font-family: 'Roboto Light', sans-serif;
-    font-size: 100%;
-    width: 100%;
+	-webkit-font-smoothing: antialiased;
 }
 div {
-    border: 1px solid Chocolate;
+    /*border: 1px solid Chocolate;*/
 }
+.content {
+    padding: 0 15px;
+    width: 970px;
+    margin: 0 auto;
+}
+
 /*Navigation bar*/
 .top-navigation {
 	background-color: #fff;
 	width: 100%;
 	position: fixed;
+	border-bottom: 1px solid #DDD;
 }
 .top-navigation > .content {
 	height: 70px;
-	
 }
-.top-navigation .content {
-	padding: 0 15px;
-	width: 940px;
-	margin: 0 auto;
-}
-.top-navigation .content > img {
-	width: 26px;
-	height: 70px;
+.top-navigation .logo {
+    height: 70px;
 }
 
 /* Navigation links*/
 .top-navigation .links {
 	float: right;
+	color: #838994;
+    font-size: 16px;
 	margin-top: 25px;
-	-webkit-font-smoothing: antialiased;
+}
+.top-navigation .links li {
+	display: inline-block;
+	margin-left: 25px;
+	transition: color 0.5s ease;
 }
 .top-navigation .links li.active {
     color: #4c5058;
     font-weight: 500;
 }
-.top-navigation .links > li {
-	display: inline-block;
-	margin-left: 25px;
-	font-family: 'Roboto Regular', sans-serif; 
-	font-size: 16px; 
-	color: #838994; 
-	letter-spacing: 0.03em;
-	transition: color 0.5s ease;
-}
 .top-navigation .links > li:hover {
 	color: #333333;
 	cursor: pointer;
 }
+
+/* Introduction */
 .introduction {
-	height: 590px;
+	height: 735px;
 	background-image: url(../img/first-background.jpg);
 	background-repeat: no-repeat;
-	background-position: bottom center;
+	background-position: center bottom;
 	background-size: cover;
 	overflow: auto;
-}
-.cases {
-	width: 970px;
-	margin: 0 auto;
 }
 .introduction h1, 
 .introduction h3 {
 	color: #fff;
 	text-align: center;
-	
 }
 .introduction h1 {
 	font-size: 5.0625em;
-	margin-top: 2em;
+	margin-top: 3em;
 	font-family: 'RobotoSlab Bold', serif;
 }
 .introduction h3 {
 	font-size: 2.25em;
-	font-family: 'RobotoSlab Light', serif;
-	margin-bottom: 2em;
+	margin-top: 0.8em;
+	letter-spacing: 0.1em;
 }
-.cases h2 {
+
+/* Buttons */
+.introduction .buttons {
 	text-align: center;
-	margin-top: 2em;
-	font-size: 2.25em;
-}
-.buttons {
-	width: 300px;
-	margin: 0 auto;
-}
-.half {
-	float: left;
-}
-button {
-	text-shadow: none;
-	border-style: none;
-	border-radius: 4px;
-	padding: 16px 26px;
-	line-height: 1.33;
-	font-size: 1.2em;
-}
-.buttons {
-	clear: both;
-}
-.learn {
-	margin-right: 20px;
-}
-.watch {
 	color: #fff;
-	text-align: center;
-	padding: 3px 12px;
-	border: 1px solid #fff;
+	margin-top: 25px;
+}
+.introduction .half {
+	width: 160px;
+    padding: 0 15px;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1.2;
+}
+.half .learn {
+	text-align: right;
+}
+.half .watch {
+	text-align: left;
+    padding: 16px 24px;
+    font-weight: 500;
+}
+.introduction .learn button {
+	width: 155px;
+    background-color: #f15a29;
+    border-color: #f15a29;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 16px 24px;
+    color: white;
+    font-size: 18px;
+}
+:focus {
+    outline: none;
+}
+.introduction .learn button:hover {
+    background-color: #d9400e;
+    border-color: #cf3d0e;
+    cursor: pointer;
+}
+.introduction .watch img {
+    position: relative;
+    top: 10px;
 }
 .arrow {
 	width: 3em;
 	margin: 8em auto 0 auto;
 	animation: bounce 2s ease-in infinite;
 }
+
+
+/* The Three Case Images */
+.cases {
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 160px;
+}
+.cases .content {
+    margin-top: 126px;
+    padding: none;
+    color: #1d1e21;
+    text-align: center;
+}
+.cases h2 {
+    font-size: 44px;
+    margin: 26px 0 50px;
+}
 .cases .devices {
-	width: 33.3333333%;
-    float: left;
-    box-sizing: border-box;
-	margin-top: 1.4em;    
+    display: flex;
 }
-.devices img {
-	width: 40%;
-	margin-left: 30%;
+.cases .devices > li {
+    width: 33.3333333%;
 }
+.cases .devices h3 {
+    font-weight: bold;
+    font-size: 25px;
+    margin: 40px 0px 20px;
+}
+.cases .devices p {
+    font-weight: 300;
+    font-size: 21px;
+    padding: 0 10px;
+}
+
+
 footer {
 	width: 100%;
 	clear: both;
 }
-
 .social ul {
 	width: 110px;
 	margin: 0 auto;
