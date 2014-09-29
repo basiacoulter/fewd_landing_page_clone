@@ -143,24 +143,28 @@ div {
     padding: 16px 24px;
     font-weight: 500;
 }
-.introduction .learn button {
-	width: 155px;
-    background-color: #f15a29;
-    border-color: #f15a29;
+button {
     text-shadow: none;
     border-style: none;
     border-radius: 4px;
     padding: 16px 24px;
-    color: white;
     font-size: 18px;
 }
+button:hover {
+	cursor: pointer;
+}
+.introduction .learn button {
+	width: 155px;
+	background-color: #f15a29;
+    border-color: #f15a29;
+    color: white;
+	}
 :focus {
     outline: none;
 }
 .introduction .learn button:hover {
     background-color: #d9400e;
     border-color: #cf3d0e;
-    cursor: pointer;
 }
 .introduction .watch img {
     position: relative;
@@ -171,7 +175,6 @@ div {
 	margin: 8em auto 0 auto;
 	animation: bounce 2s ease-in infinite;
 }
-
 
 /* The Three Case Images */
 .cases {
@@ -206,29 +209,76 @@ div {
     padding: 0 10px;
 }
 
-
-footer {
-	width: 100%;
-	clear: both;
+/* Pre-Order */
+aside {
+	margin-top: 100px;
 }
-.social ul {
-	width: 110px;
-	margin: 0 auto;
+.preorder {
+	background-image: url(../img/bottom-background.jpg);
+	height: 800px;
 }
-.social ul li {
-	display: inline-block;
-}
-.social i {
-	color: #182752;
-	box-sizing: border-box;
-	border: 1px solid #182752;
-	width: 30px;
-	height: 30px;
+.preorder button {
+	color: #f15a29;
+    border-color: #fff;
+    background-color: #fff;
 	text-align: center;
-	padding-top: 7px;
-	-moz-border-radius: 50px; 
-	-webkit-border-radius: 50px; 
-	border-radius: 50px;
+    margin: 20px 0px 0 0;
+}
+.preorder button:hover {
+    background-color: #eee;
+}
+.preorder aside {
+	margin: 40px 60px
+	padding: 16px 24px;
+	float: right;
+    text-align: center;
+}
+aside h3 {
+	font-family: 'RobotoSlab Bold', serif;
+	color: #fff;
+	font-size: 1.4em;
+}
+aside p {
+	color: #fff;
+}
+/* Footer */
+.social {
+    background-color: #fff;
+    overflow: auto;
+    padding-bottom: 150px;
+    text-align: center;
+}
+.social hr {
+    border: 0;
+    border-top: 1px solid #eaebec;
+    margin: 21px 0;
+}
+.social .icons > li {
+    border-radius: 50px;
+    width: 40px;
+    height: 18px;
+    display: inline-block;
+    margin: 20px 5px;
+    border: 1px solid #eaebec;
+    padding: 12px 0;
+    text-align: center;
+}
+.social .icons > li:hover {
+    cursor: pointer;
+}
+.social .twitter {
+    color: #55acee;
+}
+.social .facebook {
+    color: #4c66a4;
+}
+.social .instagram {
+    color: #3f729b;
+}
+.social .copy {
+    font-size: 0.9em;
+    font-weight: 300;
+    color: #838994;
 }
 @font-face {
   font-family: 'Roboto Light';
